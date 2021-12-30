@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*header начало*/
+
+body{
+    font-family: 'Roboto';
+    background: url(img/background/main_bg.jpg) top / cover no-repeat;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+}
+
+.logo h1, .page_tittle h2{
+    color:#FFF;
+    font-family: 'Monoton';
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background: #010216;
+    height: 100px;
+}
+
+.gif{
+    display: flex;
+    width: 130px;
+    height: 100px;
+    background: url(img/logo/logo_gif.gif) center / cover no-repeat; 
+}
+
+.phone{
+    font-family: 'Roboto';
+    color:#FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+nav{
+    width: 300px;
+}
+
+nav a{
+    font-size: 25px;
+}
+
+/*header конец*/
+
+/*Main начало*/
+
+.page_tittle{
+    width: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: inset 0 -5px 5px -5px #FE21BC;
+}
+
+.page_tittle h2{
+    font-size: 30px;
+}
+
+#vk, #inst {
+    width: 64px;
+    height: 64px;
+}
+
+.main_elements{
+    margin-top: 100px;
+    height: 1119px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#FFF;
+}
+
+.our_elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.main_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+    width: 360px;
+    height: 370px;
+}
+
+.main_element h2{
+    padding-bottom: 15px;
+    box-shadow: inset 0 -5px 5px -5px #FE21BC;
+}
+
+.bar:hover{
+    transition: 0.5s;
+    background:url(img/min_img/bar.jpg) center center / cover no-repeat; 
+}
+
+.music:hover{
+    transition: 0.5s;
+    background: url(img/min_img/music.jpg) center center / cover no-repeat;
+}
+
+.protect:hover{
+    transition: 0.5s;
+    background: url(img/min_img/protect.jpg) center center / cover no-repeat;
+}
+
+.music:hover h2{
+    visibility: hidden;
+}
+
+.protect:hover h2{
+    visibility: hidden;
+}
+
+.bar:hover h2{
+    visibility: hidden;
+}
+
+.rm{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 25px;
+    width: 300px;
+    height: 65px;
+    box-shadow: inset 0 -5px 5px -5px #FE21BC;
+}
+
+/*Main конец*/
+
+/*Footer начало*/
+
+footer {
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+} 
+
+/*Footer конец*/
