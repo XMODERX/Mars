@@ -8,19 +8,16 @@ a, p{
     text-decoration: none;
 }
 
-/*display flex*/
-
 .df{
     display: flex;
 }
 
 .but{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/*display flex*/
 
 /*header начало*/
 
@@ -355,6 +352,48 @@ nav ul li a{
 
 /*Photo конец*/
 
+/*rewives начало*/
+
+.rew_inner{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rew_eles{
+    width: 1200px;
+    justify-content: space-evenly;
+}
+
+.rew_element{
+    border: 2px solid silver;
+    width: 320px;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.rew_element p{
+    padding: 15px;
+}
+
+.rew_img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.rew_img img {
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}
+
+.rew_text{
+    border-bottom: 1px solid silver;
+    width: 230px;
+}
+
+/*rewives конец*/
 
 
 /*Footer начало*/
