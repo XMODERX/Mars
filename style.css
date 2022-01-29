@@ -1,63 +1,63 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
-
+@media screen and (max-width: 600px) {
+    body {
+        font-size:1.5em;
+    }
+    …
+    h2 {
+        font-size:2.5em;
+    }
+}
 a, p{
     color: #FFF;
     text-decoration: none;
 }
-
 .df{
     display: flex;
 }
-
 .but{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .tit_font{
     font-size: 25px;
 }
-
 body{
     background-color:#212121;
     background-image: url(img/background/image.png)
 }
-
 .red_line{
     border-top: 2px solid #C22A24;
     border-bottom: 2px solid #C22A24;
 }
-
 .white_back{
+    min-width: 100%;
     background-color: #FFF;
-    /*box-shadow: 0 0 50px black;*/
 }
-
+.max_back{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #251E41;
+}
 .red_btn{
     display: flex;
     justify-content: center;
 }
-
-/*header начало*/
-
 body{
     font-family: 'Roboto';
 }
-
 .logo{
     align-items: center;
     width: 400px;
 }
-
 .logo_img a{
    font-size: 50px;
 }
-
 .logo h1, .page_tittle h2, .logo h2{
     color:#FFF;
     font-family: 'Monoton';
@@ -65,100 +65,83 @@ body{
     font-size: 50px;
     font-weight: 400;
 }
-
 .container{
-    width: 1200px;
+    min-width: 1250px;
     margin: 0 auto;
     justify-content: center;
 }
-
 .header_inner{
     justify-content: space-between;
     align-items: center;
 }
-
 header{
     justify-content: space-evenly;
     background: #251E41;
     height: 75px;
+    min-width: 1250px;
 }
-
 nav{
     width: 650px;
     height: 100px;
     align-items: center;
 }
-
 nav ul{
     width: 650px;
     color: coral;
     justify-content: space-between;
 }
-
 nav ul li a{
     font-size: 20px;
     font-weight: 100;
 }
-
-/*header конец*/
-
-/*Main начало*/
-
 .main{
+    min-width: 1250px;
     height: 620px;
-    display: flex;
     background:url(img/background/Шамкир_bg.jpg) center center / cover no-repeat;
+    justify-content: center;
+    flex-direction: column;
 }
-
 .bac_black{
     width: 100%;
     height: 620px;
     opacity: 0.75;
     background: linear-gradient(to bottom, #000 0% ,#000 100% );
 }
-
 .list_tittle{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 650px;
 }
-
 .list_tittle p{
     font-size: 20px;
     color: #FFF;
 }
-
 .page_tittle{
     width: 700px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: gray;
 }
-
 .page_tittle h2{
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 45px;
     text-align: center;
 }
-
 #vk, #inst {
     width: 64px;
     height: 64px;
 }
-
 .main_elements{
     margin-top: 100px;
-    height: 370px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .grad_but{
     text-decoration: none;
     display: inline-block;
@@ -173,11 +156,9 @@ nav ul li a{
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
 }
-
 .grad_but:hover{
     background-position: right center;
 }
-
 .sliding-button {
   text-decoration: none;
   color: white;
@@ -194,7 +175,6 @@ nav ul li a{
   letter-spacing: 2px;
   transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-
 .sliding-button:before {
   content: "";
   position: absolute;
@@ -207,31 +187,21 @@ nav ul li a{
   background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-
 .sliding-button:hover {
   background: rgba(255, 255, 255, 0);
 }
-
 .sliding-button:hover:before {
   bottom: 0%;
   top: auto;
   height: 100%;
 }
-
-/*Main конец*/
-
-
-/*Surgut_bar начало*/
-
 .surgut_bol{
   margin-bottom: 50px;
 }
-
 .surgut_bol h3, p{
     color: #333333;
     display: flex;
 }
-
 .sur_inner{
     display: flex;
     flex-direction: column;
@@ -240,7 +210,6 @@ nav ul li a{
     height: auto;
     min-width: 1200px;
 }
-
 .sur_tittle{
     margin: 50px 0 50px;
     font-size: 30px;
@@ -248,35 +217,29 @@ nav ul li a{
     display: flex;
     justify-content: center;
 }
-
 .sur_els{
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 .sur_el_img{
     justify-content: flex-start;
     width: 100%;
     height: 300px;
     transition: 0.2s all linear;
 }
-
 .sur_img{
     margin: 10px;
 }
-
 .sur_img img{
     width: 220px;
     height: 250px;
     transition: 0.2s all linear;
 }
-
 .sur_img img:hover {
     z-index: 2;
     transform: scale(1.1);
 }
-
 .sur_el_text{
     display: flex;
     flex-direction: column;
@@ -284,16 +247,13 @@ nav ul li a{
     justify-content: center;
     width: 650px;
 }
-
 .sur_el_text p {
     font-size: 20px;
     font-weight: 400;
 }
-
 .sur_but{
     margin: 50px 0 50px;
 }
-
 .info_text {
     display: flex;
     flex-direction: column;
@@ -303,94 +263,79 @@ nav ul li a{
     height: 250px;
     padding: 30px;
 }
-
 .info_text p{
     color: #FFF;
     font-size: 20px;
     text-align: center;
 }
-
-/*Surgut_bol конец*/
-
-/*menu начало*/
-
 .line{
     border-bottom: 3px solid black;
 }
-
 .min_red_line{
     width: 30px;
     height: 3px;
     display: flex;
     background-color: #C22A24;
 }
-
+.menu{
+    min-width: 1250px;
+}
 .menu_inner{
     align-items: center;
     flex-direction:column;
     justify-content: space-between;
 }
-
 .menu_ourels{
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px;
 }
-
 .menu_elements{
     justify-content: center;
     flex-direction: row;
     height: 300px;
 }
-
 .menu_element{
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 250px;
 }
-
 .menu_in_tittle{
     width: 850px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .menu_in_tittle h3{
     color: #FFF;
     font-size: 40px;
     font-weight: 700;
     text-align: center;
 }
-
 .menu_tittle{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
 .menu_text{
     height: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
 .menu_text h3{
     font-size: 25px;
     font-weight: 500;
     color: #FFF;
 }
-
 .menu_text p {
     font-size: 20px;
     font-weight: 100;
     text-align: center;
     color: #FFF;
 }
-
 .menu_img{
     align-items: center;
     justify-content: center;
@@ -399,44 +344,33 @@ nav ul li a{
     height: 85px;
     border: 2px solid #C22A24;
 }
-
 .menu_img img{
     width: 75px;
     height: 75px;
 }
-
-/*menu конец*/
-
-
-/*trener начало*/
-
 .treners{
+    min-width: 1250px;
     min-height: 650px;
 }
-
 .trener_inner{
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .our_elements{
     display: flex;
     justify-content: space-between;
 }
-
 .main{
     text-align: center;
     font-family: 'Roboto';
 }
-
 .main_element{
     display: flex;
     justify-content: space-between;
     
 }
-
 .main_element img{
     position:relative;
     width:380px;
@@ -444,40 +378,30 @@ nav ul li a{
     transition: 0.2s all linear;
     margin: 15px;
 }
-
 .main_element img:hover{
     z-index: 2;
     transform: scale(1.1);
 }
-
-/*trener конец*/
-
-/*Photo_slider начало*/
-
-
 .photo_slider{
     justify-content: center;
     min-height: 650px;
+    min-width: 1250px;
 }
-
 .slid_er{
     flex-direction: column;
     align-items: center;
     width: 100%;
     min-height: 750px;
 }
-
 .slider_inner{
     align-items: center;
     justify-content: center;
 }
-
 .wrapper {
 	height: 500px;
 	position: relative;
 	width: 750px;
 }
-
 .slider {
 	background-color: #ddd;
 	height: inherit;
@@ -489,43 +413,34 @@ nav ul li a{
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
-
 .wrapper > input {
 	display: none;
 }
-
 .slides {
 	height: inherit;
 	position: absolute;
 	width: inherit;
 }
-
 .slide1 { 
     background: url(/img/min_img/sham_use.jpg) center center / cover no-repeat; 
 }
-
 .slide2 { 
     background: url(/img/min_img/sham_use_2.jpg) center center / cover no-repeat; 
 }
-
 .slide3 { 
     background: url(/img/min_img/sham_use_3.jpg) center center / cover no-repeat; 
 }
-
 .slide4 { 
     background: url(/img/min_img/sham_min.jpg) center center / cover no-repeat; 
 }
-
 .slide5 { 
     background: url(/img/min_img/sham_min_2.JPG) center center / cover no-repeat; 
 }
-
 .wrapper .controls {
 	left: 50%;
 	margin-left: -98px;
 	position: absolute;
 }
-
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
@@ -538,7 +453,6 @@ nav ul li a{
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-
 .wrapper label:after {
 	border: 2px solid  #C22A24;
 	content: " ";
@@ -553,7 +467,6 @@ nav ul li a{
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
@@ -570,7 +483,6 @@ nav ul li a{
 	-o-transition: background ease-in-out .5s;
 	transition: background ease-in-out .5s;
 }
-
 .wrapper label:hover, 
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
@@ -579,7 +491,6 @@ nav ul li a{
 #slide5:checked ~ .controls label:nth-of-type(5) {
 	background:  #C22A24;
 }
-
 .slides {
 	height: inherit;
 	opacity: 0;
@@ -595,7 +506,6 @@ nav ul li a{
 	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
-
 #slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
 #slide3:checked ~ .slider > .slide3,
@@ -608,21 +518,17 @@ nav ul li a{
 	-o-transform: scale(1);
 	transform: scale(1);
 }
-
-/*Photo_slider конец*/
-
-/*Grafik начало*/
-
+.grafik{
+    min-width: 1250px;
+}
 .graf_inner{
     flex-direction: column;
 }
-
 .graf_els{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
 }
-
 .graf_element{
     border-radius: 20px;
     border: 2px solid #C22A24;
@@ -633,7 +539,6 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .graf_col{
     border-radius: 20px;
     width: 850px;
@@ -644,36 +549,28 @@ nav ul li a{
     height: 750px;
     border: 2px solid #C22A24;
 }
-
 .graf_element h5, .graf_element p{
     color: #FFF;
     border-bottom: 2px solid #2f2f2f;
     font-size: 25px;
     font-weight: 500;
 }
-
 .graf_element p:hover{
     border-bottom: 2px solid  #1747ca;
 }
-
-/*Grafik  конец*/
-
-/*Rewives начало*/
-
 .prise{
-    margin: 100px 0;
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 1250px;
     height: 750px;
     justify-content: space-evenly;
     flex-direction: row;
 }
-
 .pris_inner{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .prise_els{
     justify-content: space-evenly;
     border-radius: 30px;
@@ -681,60 +578,47 @@ nav ul li a{
     padding: 20px;
     width: 850px;
 }
-
 .prise_els p{
     flex-direction: column;
     font-size: 25px;
     border-bottom: 2px solid #F5BF00;
 }
-
 .prise_name{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 750px;
 }
-
 .prise_num{
     min-width: 100px;
 }
-
 .prise_name, .prise_num{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-/*Prise конец*/
-
 .mail{
-    height: 450px;
+    min-width: 1250px;
+    height: 350px;
 }
-
 .form_tittle{
     height: 70px;
 }
-
-
 .mail_inner, .form_tittle{
     justify-content: center;
 }
-
 .form_mail{
     width: 940px;
     height: 250px;
     flex-direction: column;
 }
-
 input{
     border: none;
     color: #333333;
 }
-
 .form_plase input:focus{
     outline: none;
 }
-
 .form_plase{
     width: 880px;
     height: 30px;
@@ -742,12 +626,10 @@ input{
     justify-content: space-between;
     padding: 30px;
 }
-
 .form{
     display: flex;
     justify-content: center;
 }
-
 #name, #phone, #mail{
     border-bottom: 1px solid #333333;
     width: 190px;
@@ -755,73 +637,52 @@ input{
     font-size: 17px;
     font-weight: 500;
 }
-
 #mail, #name, #phone,:focus::-webkit-input-placeholder {
     color: transparent;
     opacity: 1; 
     transition: 0.5s ease;
 }
-
 #subm{
     font-size: 20px;
     width: 170px;
     height: 50px;
 }
-
 #subm:hover{
     background-color:#C22A24;
     cursor: pointer;
 }
-
-/*contact начало*/
-
 .contacts{
     flex-direction: column;
 }
-
 .contact_inner{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .contact_tittle{
     justify-content: space-evenly;
     flex-direction: column;
 }
-
 .contact_tittle p {
     font-size: 20px;
 }
-
 iframe{
     border: none;
-    width: 100%;
+    min-width: 1250px;
     height: 350px;
 }
-
 .map_text p {
     font-size: 20px;
 }
-
-/*contact конец*/
-
-
-/*Footer начало*/
-
 footer{
-    min-height: 150px;
-    width: 100%;
+    height: 150px;
+    min-width: 100%;
     align-items: center;
     justify-content: space-between;
     background-color: #251E41;
 } 
-
 .footer_inner p{
 color: #FFF;    
 }
-
 .foot_more{
     flex-direction: column;
 }
-
-/*Footer конец*/
